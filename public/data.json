@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/mVc3szw1/demo-app-1.webp",
+    "title": "Super Cleaner",
+    "companyName": "CleanTech",
+    "id": 1,
+    "description": "A powerful cleaning app for your device.",
+    "size": 25,
+    "reviews": 150,
+    "ratingAvg": 4.3,
+    "downloads": 10000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 50 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/nN4NRg1H/demo-app-2.webp",
+    "title": "Fit Tracker",
+    "companyName": "HealthCorp",
+    "id": 2,
+    "description": "Track your fitness and stay healthy.",
+    "size": 30,
+    "reviews": 200,
+    "ratingAvg": 4.6,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 60 },
+      { "name": "5 star", "count": 105 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/2YSS08yQ/demo-app-3.webp",
+    "title": "Photo Editor Pro",
+    "companyName": "SnapSoft",
+    "id": 3,
+    "description": "Edit photos like a professional.",
+    "size": 50,
+    "reviews": 500,
+    "ratingAvg": 4.8,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 100 },
+      { "name": "5 star", "count": 355 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/21mCsDDp/demo-app-4.webp",
+    "title": "Note Keeper",
+    "companyName": "NoteSoft",
+    "id": 4,
+    "description": "Keep all your notes organized.",
+    "size": 15,
+    "reviews": 90,
+    "ratingAvg": 4.2,
+    "downloads": 8000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 30 },
+      { "name": "5 star", "count": 30 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4RQ8Znmc/demo-app-5.webp",
+    "title": "Music Streamer",
+    "companyName": "TuneWorld",
+    "id": 5,
+    "description": "Stream unlimited music anytime.",
+    "size": 40,
+    "reviews": 600,
+    "ratingAvg": 4.7,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 150 },
+      { "name": "5 star", "count": 370 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Language Learner",
+    "companyName": "LinguaSoft",
+    "id": 6,
+    "description": "Learn new languages easily.",
+    "size": 35,
+    "reviews": 250,
+    "ratingAvg": 4.5,
+    "downloads": 70000,
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 90 },
+      { "name": "5 star", "count": 110 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Weather Forecast",
+    "companyName": "SkyNet",
+    "id": 7,
+    "description": "Get accurate weather predictions.",
+    "size": 20,
+    "reviews": 300,
+    "ratingAvg": 4.4,
+    "downloads": 90000,
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 80 },
+      { "name": "5 star", "count": 153 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Task Manager",
+    "companyName": "ProductivityInc",
+    "id": 8,
+    "description": "Manage your tasks efficiently.",
+    "size": 22,
+    "reviews": 180,
+    "ratingAvg": 4.3,
+    "downloads": 40000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 35 },
+      { "name": "4 star", "count": 60 },
+      { "name": "5 star", "count": 60 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Travel Guide",
+    "companyName": "Wanderlust",
+    "id": 9,
+    "description": "Plan your trips with ease.",
+    "size": 28,
+    "reviews": 320,
+    "ratingAvg": 4.6,
+    "downloads": 110000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 80 },
+      { "name": "5 star", "count": 185 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Recipe Book",
+    "companyName": "CookMaster",
+    "id": 10,
+    "description": "Discover new recipes every day.",
+    "size": 32,
+    "reviews": 400,
+    "ratingAvg": 4.7,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 120 },
+      { "name": "5 star", "count": 210 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Budget Tracker",
+    "companyName": "FinancePro",
+    "id": 11,
+    "description": "Track your expenses and save money.",
+    "size": 18,
+    "reviews": 220,
+    "ratingAvg": 4.4,
+    "downloads": 60000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 80 },
+      { "name": "5 star", "count": 80 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Meditation App",
+    "companyName": "MindWell",
+    "id": 12,
+    "description": "Relax and meditate daily.",
+    "size": 24,
+    "reviews": 350,
+    "ratingAvg": 4.6,
+    "downloads": 95000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 100 },
+      { "name": "5 star", "count": 185 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Language Translator",
+    "companyName": "GlobalTalk",
+    "id": 13,
+    "description": "Translate any language instantly.",
+    "size": 38,
+    "reviews": 280,
+    "ratingAvg": 4.5,
+    "downloads": 80000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 90 },
+      { "name": "5 star", "count": 125 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Workout Planner",
+    "companyName": "FitLife",
+    "id": 14,
+    "description": "Plan and track your workouts.",
+    "size": 26,
+    "reviews": 210,
+    "ratingAvg": 4.3,
+    "downloads": 70000,
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 35 },
+      { "name": "4 star", "count": 60 },
+      { "name": "5 star", "count": 95 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Mind Games",
+    "companyName": "BrainBox",
+    "id": 15,
+    "description": "Fun and challenging brain games.",
+    "size": 45,
+    "reviews": 500,
+    "ratingAvg": 4.7,
+    "downloads": 130000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 120 },
+      { "name": "5 star", "count": 315 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Daily Planner",
+    "companyName": "OrganizeIt",
+    "id": 16,
+    "description": "Organize your day efficiently.",
+    "size": 20,
+    "reviews": 190,
+    "ratingAvg": 4.4,
+    "downloads": 55000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 35 },
+      { "name": "4 star", "count": 60 },
+      { "name": "5 star", "count": 70 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Video Editor",
+    "companyName": "ClipMaster",
+    "id": 17,
+    "description": "Edit videos easily and professionally.",
+    "size": 55,
+    "reviews": 450,
+    "ratingAvg": 4.8,
+    "downloads": 140000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 120 },
+      { "name": "5 star", "count": 265 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Expense Manager",
+    "companyName": "MoneyWise",
+    "id": 18,
+    "description": "Manage your expenses smartly.",
+    "size": 30,
+    "reviews": 220,
+    "ratingAvg": 4.5,
+    "downloads": 65000,
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 80 },
+      { "name": "5 star", "count": 80 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Quiz Master",
+    "companyName": "BrainyApps",
+    "id": 19,
+    "description": "Test your knowledge with quizzes.",
+    "size": 28,
+    "reviews": 300,
+    "ratingAvg": 4.6,
+    "downloads": 90000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 90 },
+      { "name": "5 star", "count": 145 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3Bwgw1X/demo-app-6.webp",
+    "title": "Shopping List",
+    "companyName": "ShopEasy",
+    "id": 20,
+    "description": "Create and manage your shopping list.",
+    "size": 16,
+    "reviews": 150,
+    "ratingAvg": 4.3,
+    "downloads": 45000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 45 },
+      { "name": "5 star", "count": 60 }
+    ]
+  }
+]
