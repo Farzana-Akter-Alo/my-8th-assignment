@@ -3,7 +3,8 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-      this is about
+      {/* install main */}
+      
     </div>
   )
 }

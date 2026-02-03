@@ -1,8 +1,9 @@
-import React from "react";
-import { Link, useLocation } from "react-router";
+import React, { useState } from "react";
+import { useLocation, useNavigate } from "react-router";
 import DwImg from "../../assets/icon-downloads.png";
 import RtImg from "../../assets/icon-ratings.png";
 import RvImg from "../../assets/icon-review.png";
+
 import {
   BarChart,
   Bar,
@@ -15,7 +16,21 @@ import {
 
 const SingleCardDetails = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const { card } = location.state || {};
+
+  const [isInstalled, setIsInstalled] = useState(() => {
+    if (!card?.id) return false;
+    return localStorage.getItem(`installed_${card.id}`) === "true";
+  });
+
+  const handleInstall = () => {
+    setIsInstalled(true);
+    localStorage.setItem(`installed_${card.id}`, "true");
+    localStorage.setItem(`card_${card.id}`, JSON.stringify(card));
+    navigate("/installization", { state: { card, showToast: true } });
+  };
+
   const {
     title,
     image,
@@ -27,6 +42,7 @@ const SingleCardDetails = () => {
     size,
     ratings,
   } = card || {};
+
   return (
     <div>
       <div className="w-7xl mx-auto ">
@@ -62,11 +78,15 @@ const SingleCardDetails = () => {
                 <p className="text-gray-700 font-bold text-2xl">{reviews}</p>
               </div>
             </div>
-            <Link to="/installization">
-              <button className="mt-4 text-white text-md px-6 py-2 rounded-sm bg-[#00D390]">
-                Install Now {`(${size}MB)`}
-              </button>
-            </Link>
+            <button
+              disabled={isInstalled}
+              onClick={handleInstall}
+              className={`mt-4 text-white text-md px-6 py-2 rounded-sm ${
+                isInstalled ? "bg-gray-400 cursor-not-allowed" : "bg-[#00D390]"
+              }`}
+            >
+              {isInstalled ? "Installed" : `Install Now (${size}MB)`}
+            </button>
           </div>
         </div>
 
