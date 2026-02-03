@@ -4,6 +4,8 @@ import Root from "../Root/Root";
 import Home from "../Home/Home";
 import About from "../About/About";
 import Install from "../Install/Install";
+import CardDetails from "../Pages/CardDetails";
+import SingleCardDetails from "../Pages/SingleCardDetails";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -15,11 +17,17 @@ export const router = createBrowserRouter([
         Component: Home,
       },
       {
-        path: "app",
-        Component: About,
+        path: "/app",
+        loader: () => fetch("./data.json"),
+        Component: CardDetails,
       },
       {
-        path: "installization",
+        path: "/app/:id",
+        loader: () => fetch("./data.json"),
+        Component: SingleCardDetails,
+      },
+      {
+        path: "/installization",
         Component: Install,
       },
     ],

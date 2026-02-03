@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       <Banner1 />
       <Banner2 />
-      <Cards apps={apps} />
+      <Cards apps={apps} limit={8} />
     </div>
   );
 };
