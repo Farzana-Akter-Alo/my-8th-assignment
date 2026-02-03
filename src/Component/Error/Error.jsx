@@ -1,9 +1,7 @@
 import React from "react";
 import AppError from "../../assets/error-404.png";
-import { useNavigate } from "react-router";
 
 const Error = () => {
-  const navigate = useNavigate();
   return (
     <div className="w-7xl mx-auto mt-20">
       <div className="">
@@ -15,7 +13,7 @@ const Error = () => {
           The page you are looking for is not available.
         </p>
         <button
-          onClick={() => navigate("/app")}
+          onClick={() => window.history.back()}
           className=" border px-6 py-2 mt-6 mb-20  text-white font-medium rounded-sm bg-gradient-to-l from-[#9F62F2] to-[#632EE3] "
         >
           Go Back
