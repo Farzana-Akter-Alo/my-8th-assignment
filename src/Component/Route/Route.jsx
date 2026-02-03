@@ -9,7 +9,7 @@ import Error from "../Error/Error";
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component: Root,
+    element: <Root />,
     errorElement: <Error />,
     children: [
       {
