@@ -19,17 +19,17 @@ export const router = createBrowserRouter([
         Component: Home,
       },
       {
-        path: "/app",
+        path: "app",
         loader: () => fetch("./data.json"),
         Component: CardDetails,
       },
       {
-        path: "/app/:id",
+        path: "app/:id",
         loader: () => fetch("./data.json"),
         Component: SingleCardDetails,
       },
       {
-        path: "/installization",
+        path: "installization",
         Component: Install,
       },
       
