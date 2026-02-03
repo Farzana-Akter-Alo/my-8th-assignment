@@ -15,7 +15,7 @@ const Error = () => {
           The page you are looking for is not available.
         </p>
         <button
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/app")}
           className=" border px-6 py-2 mt-6 mb-20  text-white font-medium rounded-sm bg-gradient-to-l from-[#9F62F2] to-[#632EE3] "
         >
           Go Back
