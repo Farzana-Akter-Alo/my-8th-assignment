@@ -8,11 +8,21 @@ const CardDetails = () => {
   const apps = useLoaderData();
   const appList = Array.isArray(apps) ? apps : apps.apps || [];
 
+  if (!appList.length) {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <p className="text-gray-500 text-xl">Loading Apps...</p>
+      </div>
+    );
+  }
+
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredApps = appList.filter((card) =>
-    card.title.toLowerCase().includes(searchTerm.toLowerCase()),
-  );
+  const filteredApps = searchTerm
+    ? appList.filter((card) =>
+        card.title.toLowerCase().includes(searchTerm.toLowerCase()),
+      )
+    : appList;
   return (
     <div className="w-7xl mx-auto mb-16">
       <div className="mt-16 text-center mb-8">
@@ -52,13 +62,17 @@ const CardDetails = () => {
       </div>
 
       <div className="grid grid-cols-4 gap-4">
-        {filteredApps.length > 0 ? (
-          filteredApps.map((card) => <Card key={card.id} card={card} />)
-        ) : (
-          <div className="col-span-full flex justify-center mt-10">
-            <img className="w-48" src={NoResultImg} alt="No results found" />
-          </div>
-        )}
+        {filteredApps.length > 0
+          ? filteredApps.map((card) => <Card key={card.id} card={card} />)
+          : searchTerm && (
+              <div className="col-span-full flex justify-center mt-10">
+                <img
+                  className="w-48"
+                  src={NoResultImg}
+                  alt="No results found"
+                />
+              </div>
+            )}
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import About from "../About/About";
 import Install from "../Install/Install";
 import CardDetails from "../Pages/CardDetails";
 import SingleCardDetails from "../Pages/SingleCardDetails";
+import Error from "../Error/Error";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "/installization",
         Component: Install,
+      },
+      {
+        path: "*",
+        Component: Error,
       },
     ],
   },

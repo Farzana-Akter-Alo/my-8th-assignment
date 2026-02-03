@@ -13,11 +13,13 @@ import {
   CartesianGrid,
   ResponsiveContainer,
 } from "recharts";
+import Error from "../Error/Error";
 
 const SingleCardDetails = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { card } = location.state || {};
+  if (!card) return <Error />;
 
   const [isInstalled, setIsInstalled] = useState(() => {
     if (!card?.id) return false;
@@ -97,7 +99,7 @@ const SingleCardDetails = () => {
             <ResponsiveContainer width="100%" height={300}>
               <BarChart
                 data={ratings}
-                layout="vertical" // vertical layout makes Y-axis = name
+                layout="vertical"
                 margin={{ top: 20, right: 20, left: 40, bottom: 20 }}
               >
                 <CartesianGrid strokeDasharray="3 3" />

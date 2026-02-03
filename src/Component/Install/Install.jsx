@@ -10,7 +10,6 @@ const Install = () => {
 
   const [installedApps, setInstalledApps] = useState([]);
 
-  // Toast for newly installed app
   useEffect(() => {
     if (showToast && card) {
       toast.success(`${card.title} installed successfully!`);
@@ -18,7 +17,6 @@ const Install = () => {
     }
   }, [showToast, card, navigate, location.pathname]);
 
-  // Load all installed apps from localStorage
   useEffect(() => {
     const apps = [];
     for (let key in localStorage) {
@@ -35,7 +33,6 @@ const Install = () => {
     setInstalledApps(apps);
   }, []);
 
-  // Uninstall handler
   const handleUninstall = (id) => {
     localStorage.removeItem(`installed_${id}`);
     localStorage.removeItem(`card_${id}`);
@@ -74,7 +71,6 @@ const Install = () => {
               key={app.id}
               className="flex items-center justify-between p-4 rounded-md shadow-md"
             >
-              {/* Left: App info */}
               <div className="flex items-center gap-4">
                 <img
                   src={app.image}
@@ -105,7 +101,6 @@ const Install = () => {
                 </div>
               </div>
 
-              {/* Right: Uninstall button */}
               <button
                 onClick={() => handleUninstall(app.id)}
                 className="bg-green-500 text-white px-4 py-2 rounded-sm hover:bg-green-400"
