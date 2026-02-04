@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation, useNavigate } from "react-router";
+import { useLoaderData, useLocation, useNavigate } from "react-router";
 import DwImg from "../../assets/icon-downloads.png";
 import RtImg from "../../assets/icon-ratings.png";
 import RvImg from "../../assets/icon-review.png";
@@ -16,9 +16,9 @@ import {
 import Error from "../Error/Error";
 
 const SingleCardDetails = () => {
-  const location = useLocation();
+  const card = useLoaderData();
   const navigate = useNavigate();
-  const { card } = location.state || {};
+
   if (!card) return <Error />;
 
   const [isInstalled, setIsInstalled] = useState(() => {
